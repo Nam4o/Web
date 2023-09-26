@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>INDEX</h1>
+    <p>{% for article in articles %}
+        {{article}}
+        {% endfor %}</p>
+
+    <a href="{% url "pages" %}">go</a>
+{% endblock content %}
